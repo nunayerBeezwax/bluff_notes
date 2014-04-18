@@ -1,0 +1,8 @@
+<h1>Bluff Notes</h1>
+
+<h4>Upload a file</h4>
+
+<%= form_for @upload do |f| %>
+  <%= f.file_field :document %>
+  <%= f.submit "upload", :class => 'btn btn-primary' %>
+<% end %>
