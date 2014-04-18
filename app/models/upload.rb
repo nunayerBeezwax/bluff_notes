@@ -12,6 +12,6 @@ class Upload < ActiveRecord::Base
 
     words.each { |word| @freqs[word] += 1 }
     blacklist.each {|key| @freqs.delete(key) }
-    @freqs.sort_by { |word, appearance| appearance }.reverse[0..20]
+    @freqs.sort_by { |word, appearance| appearance }.reverse
   end
 end

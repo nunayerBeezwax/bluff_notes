@@ -6,3 +6,8 @@
   <%= f.file_field :document %>
   <%= f.submit "upload", :class => 'btn btn-primary' %>
 <% end %>
+
+<%= form_for @reader do |f| %>
+  <%= f.text_field :url %>
+  <%= f.submit "get site", :class => "btn btn-primary" %>
+<% end %>

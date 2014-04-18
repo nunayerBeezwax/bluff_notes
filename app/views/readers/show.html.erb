@@ -25,7 +25,7 @@
     .selectAll("div")
       .data(data)
     .enter().append("div")
-      .style("font-size", function(d) { return d.appearance + "px"; })
+      .style("font-size", function(d) { return d.appearance * 10 + "px"; })
       .text(function(d) { return d.word; });
 </script>
 

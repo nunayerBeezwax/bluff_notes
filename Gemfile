@@ -15,6 +15,7 @@ gem 'faker'
 gem 'devise'
 gem 'formtastic'
 gem 'd3-rails'
+gem 'mechanize'
 
 group :development do
   gem 'better_errors'
